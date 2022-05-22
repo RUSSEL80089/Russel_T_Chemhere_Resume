@@ -27,7 +27,6 @@ body {
     min-height: 1000px;
     background: #fff;
     margin: 50px;
-    margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgb(253, 2, 169);
@@ -138,6 +137,15 @@ body {
 .contactInfo ul li span {
     color: #fff;
     font-weight: 300;
+}
+
+.contactInfo ul li span a {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo ul li span a:hover {
+    color: purple;
 }
 
 
@@ -310,4 +318,29 @@ p {
     color: purple;
     font-size: 20px;
     width: 21px;
+}
+
+@media(max-width:1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px) {
+    .about .box {
+        flex-direction: column;
+    }
+    .about .box .year_company {
+        margin-bottom: 5px;
+    }
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
