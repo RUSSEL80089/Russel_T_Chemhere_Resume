@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* below is the default of the page*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-sarif;
+}
+
+
+/*vh stands for view height of the body whichh will be 100*/
+
+body {
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(253, 2, 169);
+}
+
+
+/*===========Left Side======================*/
+
+.container .left_hand {
+    position: relative;
+    background: rgb(20, 20, 20);
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgb(255, 0, 255);
+}
+
+
+/* the image will not stick out of  the box because we have hid the overflow parts*/
+
+.profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+/*This allows the image to fit in the circle nicely and neatly because we have crop and  set the image to be absolute*/
+
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*text will be in capital letters in colour white*/
+
+.profileText h2 {
+    color: rgb(255, 19, 255);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+
+/* here we just differentiate my name with my profession by changing the font size n making is a bit small*/
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+
+/*=================Contact Section====================*/
+
+.contactInfo {
+    padding-top: 40px;
+}
+
+
+/*All the titles will be in white colour and in uppercase with a distance between them*/
+
+.title {
+    color: rgb(255, 19, 255);
+    ;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+
+/* the icons will be in color purple*/
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(175, 1, 255);
+}
+
+.contactInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+
+/*=========================Education Section===============================*/
+
+.contactInfo.education li {
+    margin-bottom: 15px;
+}
+
+
+/* the duration of the education will be in purple in a bit big font*/
+
+.contactInfo.education h5 {
+    color: rgb(250, 4, 17);
+    font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2) {
+    color: rgb(4, 29, 250);
+    font-weight: 500;
+}
+
+.contactInfo.education h4 {
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/*=======================Language Section========================*/
+
+.contactInfo.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    display: block;
+    margin-top: 5px;
+}
+
+
+/*  Each language will fill the bar in purple color according to the percentage of the width in the  index file.*/
+
+.contactInfo.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: purple;
+}
+
+
+/* ===========Right Side =================*/
+
+
+/*tThe background will be wil grey to reduce brightness of the screen*/
+
+.container .right_hand {
+    position: relative;
+    background: rgba(114, 109, 109, 0.507);
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+
+/*=======================Profile=====================*/
+
+.title2 {
+    color: rgb(255, 0, 98);
+    ;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(20, 20, 20);
+}
+
+p {
+    color: black;
+}
+
+
+/*===================Experience==============================*/
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: rgb(74, 3, 77);
+    font-weight: 600;
+}
+
+
+/* this is the section for the post on the job. So the color will be dusty sky blue written in capital letters*/
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: rgb(9, 192, 168);
+    font-size: 21px;
+}
+
+
+/*===============Skill Section======================*/
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: rgb(151, 3, 3);
+    font-weight: 500;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #b3b1b1;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(59, 0, 59);
+}
+
+
+/*================Interest Section===================================*/
+
+.interests ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* The interests will be written in dar red bric color*/
+
+.interests ul li {
+    list-style: none;
+    color: rgb(82, 6, 6);
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+
+/*this will change the icons to a purple color*/
+
+.interests ul li .fa {
+    color: purple;
+    font-size: 20px;
+    width: 21px;
+}
